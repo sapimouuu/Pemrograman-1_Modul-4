@@ -36,9 +36,13 @@ if(pil==1){
     scanf("%f", &nil1);
     printf("Masukkan nilai kedua : ");
     scanf("%f", &nil2);
-    hasil = nil1/nil2;
-    printf("Hasil pembagian antara %.2f dengan %.2f adalah %.2f",nil1,nil2,hasil);
-    printf("\n\n");
+    if(nil2==0){
+        printf("Tak tentu(indeterminate)\n\n");
+    }else{
+        hasil = nil1/nil2;
+        printf("Hasil pembagian antara %.2f dengan %.2f adalah %.2f",nil1,nil2,hasil);
+        printf("\n\n");
+    }
 }else if(pil==5){
     printf("Terimakasih telah menggunakan Kalkulator Nurfitria Ramadhani");
 }else{
